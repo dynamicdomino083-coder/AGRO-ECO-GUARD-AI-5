@@ -200,10 +200,10 @@ class _AIChatPageState extends State<AIChatPage> {
 
   String selectedLanguage = 'English';
 
-  // Replace this with your own secure HTTPS Python backend URL.
-  // Never put a private API key in this public GitHub repository.
+  // Connected to the deployed Python backend.
+  // Never put a private AI API key in this public repository.
   static const String backendUrl =
-      'https://YOUR-SECURE-BACKEND-URL/api/ask';
+      'https://agro-eco-guard-ai-5.onrender.com/api/ask';
 
   final Map<String, String> languageNames = {
     'English': 'en-US',
@@ -652,4 +652,5 @@ class FounderPage extends StatelessWidget {
               style: TextStyle(
                 color: Color(0xFF36D98B),
                 letterSpacing: 2,
-            
+              ),
+        
